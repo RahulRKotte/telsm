@@ -1,0 +1,16 @@
+{
+  "name": "telsm-stremio-addon",
+  "version": "1.0.0",
+  "description": "An addon to give telugu content",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "author": "RahulRKotte",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "stremio-addon-sdk": "^1.6.10"
+  }
+}
