@@ -51,6 +51,13 @@ addon.get("/request_token", async function (req, res) {
   respond(res, requestToken);
 });
 
+addon.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'UP',
+    timestamp: new Date().toISOString(),
+  });
+});
+
 addon.get("/session_id", async function (req, res) {
   const requestToken = req.query.request_token
   const sessionId = await getSessionId(requestToken)
