@@ -1,16 +1,38 @@
 {
-  "name": "telsm-stremio-addon",
-  "version": "1.0.0",
-  "description": "An addon to give telugu content",
-  "main": "index.mjs",
-  "type": "module",
-  "scripts": {
-    "start": "node index.mjs"
-  },
-  "author": "RahulRKotte",
-  "license": "ISC",
+  "name": "tmdb-addon",
+  "version": "3.0.18",
+  "description": "Metadata provided by TMDB",
+  "main": "server.js",
   "dependencies": {
-    "axios": "^1.7.9",
-    "stremio-addon-sdk": "^1.6.10"
+    "cache-manager": "^3.6.3",
+    "cache-manager-mongodb": "^0.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "fanart.tv-api": "^2.0.1",
+    "moviedb-promise": "^4.0.7",
+    "transliteration": "^2.3.5",
+    "url-exists": "^1.0.3"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcanelas/tmdb-addon"
+  },
+  "keywords": [
+    "tmdb",
+    "stremio",
+    "addon"
+  ],
+  "author": "mrcanelas",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mrcanelas/tmdb-addon/issues"
+  },
+  "homepage": "https://github.com/mrcanelas/tmdb-addon#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
