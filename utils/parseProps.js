@@ -182,7 +182,7 @@ function parseMedia(el, type, genreList = []) {
     poster: `https://image.tmdb.org/t/p/w500${el.poster_path}`,
     background: `https://image.tmdb.org/t/p/original${el.backdrop_path}`,
     posterShape: "regular",
-    imdbRating: el.vote_average ? el.vote_average.toFixed(1) : 'N/A',
+    imdbRating: el.vote_average ? el.vote_average.toFixed(1) : '1',
     year: type === 'movie' ? (el.release_date ? el.release_date.substr(0, 4) : "") : (el.first_air_date ? el.first_air_date.substr(0, 4) : ""),
     type: type === 'movie' ? type : 'series',
     description: el.overview,
